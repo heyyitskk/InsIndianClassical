@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 30px;
+}
+
+body {
+    background-color: bisque;
+}
+
+footer {
+    width: 100%;
+    background-color: coral ;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+ }
+
+ img {
+    margin:20px;
+    width: 50%;
+ }
+
+ main {
+    display: flex;
+    flex-direction: column;
+ }
+
+ audio {
+    align-self: center;
+    margin: 10px;
+ }
+
+ h4 {
+   font-style: oblique;
+ }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            let tan = document.querySelectorAll('a[href*=".html"]');
+            for(let i=0; i<tan.length; i++) {
+                tan[i].addEventListener('mouseover', function() {
+                    tan[i].style.fontStyle = 'italic';
+                    tan[i].style.color = 'brown';
+                });
+            tan[i].addEventListener('mouseout', function() {
+                tan[i].style.fontStyle = 'normal';
+                tan[i].style.color = 'black';
+            });
+        }
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <title>Tanpura</title>
+</head>
+<body>
+    <h1>Tanpura</h1>
+    <main>
+        <p>The tanpura is a drone instrument of Indian music prevalent in both the Hindustani and the Carnatic systems. It plays an important role in a concert of classical music by providing the base note (adharaswara) and by creating an aesthetic ambience on the stage. A well-tuned tanpura can emit possibly all the seven notes of the gamut. The tanpura by its function of providing a background, provides neither a specific note nor a rhythm. It creates a circle of certain pitches which by themselves do not produce a melody. Therefore, it will be more apt if we say that the tanpura creates a melodic background, but not a melody. Thus the tanpura provides a drone, i.e. adhar swara, designed to create a musical state in which an artist enjoys the fullest possible freedom to explore the different elements of the music. The continuous drone of the tanpura can also impart a musical continuity, especially to the plucked and struck instruments, which do not possess a musical continuity in their sound production. Tambora, tambura, tumbura or tamura all are synonyms of the Tanpura, which is relatively a new nomenclature given to it in Northern Indian music, wheras in Carnatic music it is still called tambura.</p>
+        <img class="rounded mx-auto d-block" src="./tanpura/Tanpura_types.jpg" alt="tanpura">
+        <audio width="" height="" preload="none" controls="">
+            <source type="audio/mp3" src="/tanpura/miraj-male.mp3" title="miraj-male.mp3">
+        </audio>
+        <button class="btn btn-outline-dark" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Types of Tanpura
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Types</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    There are generally three main types of tanpuras; they are known as the Male, the Female and the Instrumental tanpuras. Their main difference lies in their size because each has its own tuning preferences. The longest tanpura, the male, has the lowest tuning and the thickest strings. (For technical details of tunings and string sizes etc. see Manual). Slightly shorter in length and with a lighter choice of string thickness is the female tanpura. The instrumental tanpura, commonly known as tanpuri, used for accompaniment of instrumental performances, is about half the length of the male tanpura. The male and female types have a gourd as a soundbox. The tanpuri is made from one piece of wood.
+                    <br>
+                    There are two main styles in building tanpuras in North India, namely those from Calcutta or those from Miraj. The Calcutta tanpuras are more finely finished, whereas the Miraj tanpuras, although not so delicately finished, have a beautiful deep rounded sound. It is this full-bodied sound that has made Miraj famous, and it is well known that the best tanpuras come from there.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <h3>Go to:</h3>
+        <div class="list-group">
+            <a href="./index.html" class="list-group-item list-group-item-action">Home</a>
+            <a href="./tabla.html" class="list-group-item list-group-item-action">Tabla</a>
+            <a href="./harmonium.html" class="list-group-item list-group-item-action">Harmonium</a>
+            <a href="./Sitar.html" class="list-group-item list-group-item-action">Sitar</a>
+            <a href="./Basuri.html" class="list-group-item list-group-item-action">Bansuri</a>
+        </div>
+    </main>
+    <footer>
+        Copyright &#169; Kunal Kittur
+    </footer>
+
+</body>
+</html>

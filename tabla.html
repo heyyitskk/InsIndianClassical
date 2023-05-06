@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            let tan = document.querySelectorAll('a[href*=".html"]');
+            for(let i=0; i<tan.length; i++) {
+                tan[i].addEventListener('mouseover', function() {
+                    tan[i].style.fontStyle = 'italic';
+                    tan[i].style.color = 'brown';
+                });
+            tan[i].addEventListener('mouseout', function() {
+                tan[i].style.fontStyle = 'normal';
+                tan[i].style.color = 'black';
+            });
+        }
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <title>Tabla</title>
+</head>
+<body>
+    <h1>Tabla</h1>
+    <main>
+        <p>The tabla is the most commonly played drum set in North Indian music. It is the instrument most frequently used to accompany vocal and instrumental music, and dance; whereas its primary function is to maintain the metric cycle in which the compositions are set. Though the tabla is essentially an accompanying instrument, the tabla players are also soloists in their own right, and many have vast repertoires of elaborate compositions handed down orally from generation to generation.</p>
+        <p>The tabla takes its name from the tabl of Arabic origin. The general meaning of the term tabl is an instrument facing upwards, with a flat surface. Scholars opine that the term table of the English language has been taken from the term tabll Some are also of the opinion that the term tabl is not an Arabic word in origin, but is borrowed from the Latin tabula.</p>
+        <p>In the beginning, the instruments which were egg-shaped or hemispherical, with skin stretched over the opening, which can also be called kettledrum, were called tabl. These were essentially martial drums, which accompanied the military expeditions of Muslims. Though made of metal, these kettledrums were originally derived from the pot drums of primitive men. Later they became rounded like the egg; this may have been an adaptation to facilitate carrying them on the back of a horse or a camel. Slowly it became a generic term used as a prefix for all types of percussion instruments, spread over in the Middle East, no matter what shape they are, i.e. the tabl-baladi, the tabl-turki, tabl-naqqara, tabl-migri, tabl-al-gawig, etc.</p>
+        <img class="rounded mx-auto d-block" src="./tabla/tabla.jpg" alt="tabla">
+        <button class="btn btn-outline-dark" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Construction & Playing
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Construction</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    The tabla is actually a pair of two small kettle drums, called dayan (or tabla) and bayan. Dayan and bayan both have a shell which is closed at the bottom. The open top is covered by multi-layered goatskin. The skins are tightened by thick rawhide straps. A black paste made of rice flour and iron filings (shiyai), giving a defined pitch to these instruments, is applied onto the skin in several layers.
+                    <br>
+                    The bayan's shell has a bulbous shape and is usually made of chromium-plated copper. More weight indicates a higher quality. Common diameters are around 9 inches. Dayans are usually made of various heavy Indian timbers. Shishum (Indian rose wood) and mahogany are two of the most common and best timbers. The shell is hollowed out roughly down to the centre. Between shell and tightening straps, wooden wedges are tucked in for tuning, permitting the dayan to be tuned very precisely to a definete pitch. Skin diameters between 5 and 6 inches are common. The smaller the diameter, the higher the dayan can be tuned and vice versa. The standard size is 5 1/4 to 5 1/2 inches which can be easily tuned to the key of c. Bigger or smaller dayans are often used to play together with particularly high or low melody instruments.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <h3>Go to:</h3>
+        <div class="list-group">
+            <a href="./index.html" class="list-group-item list-group-item-action">Home</a>
+            <a href="./tanpura.html" class="list-group-item list-group-item-action">Tanpura</a>
+            <a href="./harmonium.html" class="list-group-item list-group-item-action">Harmonium</a>
+            <a href="./Sitar.html" class="list-group-item list-group-item-action">Sitar</a>
+            <a href="./Basuri.html" class="list-group-item list-group-item-action">Bansuri</a>
+        </div>
+    </main>
+    <footer>
+        Copyright &#169; Kunal Kittur
+    </footer>
+
+</body>
+</html>

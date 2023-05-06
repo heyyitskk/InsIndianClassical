@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            let tan = document.querySelectorAll('a[href*=".html"]');
+            for(let i=0; i<tan.length; i++) {
+                tan[i].addEventListener('mouseover', function() {
+                    tan[i].style.fontStyle = 'italic';
+                    tan[i].style.color = 'brown';
+                });
+            tan[i].addEventListener('mouseout', function() {
+                tan[i].style.fontStyle = 'normal';
+                tan[i].style.color = 'black';
+            });
+        }
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <title>Sitar</title>
+</head>
+<body>
+    <h1>Sitar</h1>
+    <main>
+        <p>At present the sitar is the most popular instrument in Hindustani music. The structure and tonal quality of the modern sitar is a result of several years of hard work and devotion put in by artists and craftsmen. Craftsmen of Calcutta need special mention for their contribution to the making of a structurally perfect instrument. The basic technical and physical principles of the sitar are just like those of the veena, but the sitar is easier to handle and is more portable. For centuries, the sitar has undergone a sea of transformation, and has improved beyond recognition. The twentieth century can be called the golden era of the sitar. Stalwarts like Ravi Shankar, Vilayat Khan, Nikhil Banerjee, Uma Shankar Misra, Abdul Haleem Jaffar Khan, Rais Khan and many others have carved a special niche for the instrument in the world of music. More than three hypotheses are prevalent among the musicologists regarding the origin of the sitar. Since none of these has been unanimously accepted, there has been a lot of confusion regarding its origin. Actually the subject needs thorough research, and before reaching any conclusion, all the points should be taken into consideration.</p>
+        <p>Mulism invasions in India starting from the early eighth century to fourteenth and fifteenth centuries, from the north- western front, exposed Indians to the music, literature and social customs of Turkish, Persian and central Asian cultures. Around this time the instrument called tambur or tanbur appeared on the Indian music scenario. Ameer Khusarau described the tambur as having four strings, two of silk and two of metal. InAin-i-Akbari, four tambur players are included among the thirty-six listed musicians of the court of Akbar. A variety of tanbur with three strings instead of four is termed as seh-tar.</p>
+        <p>The instrument and a number of varieties were developed. As Allyn Miner puts it, 'Paintings and drawings show that more than one version of the instrument already existed at the end of the eighteenth century. The shape of the bridge, the material of frets, the positions of the tuning pegs, the width of the neck, the position and tuning of the strings and the right hand position help us in determining sitar types and in tracing the progress of change.'</p>
+        <img class="rounded mx-auto d-block" src="sitar.gif" alt="sitar">
+        <button class="btn btn-outline-dark" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Construction & Styles
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Construction and Styles</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    The Sitar is one of the most popular melody instruments in classic North Indian musical tradition. Together with the surbahar and the tanpura it belongs to the family of the long-necked lutes. Its sound box is made of a pumpkin while the sound board and neck are made of timber (most common is toon wood, an Indian subspecies of teak wood). Two curved bridges made of bone or horn (or plastic nowadays) have steel and bronze strings running over them. The frets are tied movable to the neck and are made of nickel silver. Most sitars are decorated with inlays of celluloid and lavish carvings.
+                    <br>
+                    Modern sitars can be classified in two categories according to their structure, design and setup -  each used to play a different style of music.
+                    <br>
+                    RAVI SHANKAR STYLE SITAR / Kharaj Pancham
+                    <br>
+                    Instruments in the 'Ravi Shankar style', also called kharaj pancham sitars, have two sound boxes and rich ornamentation. They are usually equipped with 13 sympathetic strings, three drone strings (chikari) and four melody strings with a range of four octaves.
+                    <br>
+                    VILAYAT KHAN STYLE SITAR / Gandhar Pancham
+                    <br>
+                    Sitars in the 'Vilayat Khan style', also called gandhar pancham sitars,  have only one sound-box and a rather chaste ornamentation. They are mostly equipped with 11 sympathetic strings, four drone strings (chikari) and two melody strings with a range of three octaves.
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <h3>Go to:</h3>
+        <div class="list-group">
+            <a href="index.html" class="list-group-item list-group-item-action">Home</a>
+            <a href="tanpura.html" class="list-group-item list-group-item-action">Tanpura</a>
+            <a href="tabla.html" class="list-group-item list-group-item-action">Tabla</a>
+            <a href="harmonium.html" class="list-group-item list-group-item-action">Harmonium</a>
+            <a href="Basuri.html" class="list-group-item list-group-item-action">Bansuri</a>
+        </div>
+    </main>
+    <footer>
+        Copyright &#169; Kunal Kittur
+    </footer>
+
+</body>
+</html>
